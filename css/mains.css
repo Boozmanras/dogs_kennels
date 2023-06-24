@@ -1,0 +1,237 @@
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .puppy {
+    width: 100px;
+    height: 120px;
+    position: relative;
+    animation: bark 1s infinite;
+  }
+  
+  .ear-left,
+  .ear-right {
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    top: -10px;
+  }
+  
+  .ear-left {
+    left: 10px;
+    transform: rotate(-20deg);
+  }
+  
+  .ear-right {
+    right: 10px;
+    transform: rotate(20deg);
+  }
+  
+  .face {
+    width: 100px;
+    height: 100px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+  }
+  
+  .eye-left,
+  .eye-right {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+  }
+  
+  .eye-left {
+    left: 25px;
+  }
+  
+  .eye-right {
+    right: 25px;
+  }
+  
+  .nose {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    left: 45px;
+  }
+  
+  .mouth {
+    width: 40px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 75px;
+    left: 30px;
+    overflow: hidden;
+  }
+  
+  .tongue {
+    width: 80px;
+    height: 80px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: -40px;
+    animation: tongue-move 1s infinite;
+  }
+  
+  @keyframes bark {
+    0% {
+      transform: rotate(0);
+    }
+    20% {
+      transform: rotate(10deg);
+    }
+    40% {
+      transform: rotate(-10deg);
+    }
+    60% {
+      transform: rotate(10deg);
+    }
+    80% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+  
+  @keyframes tongue-move {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(40px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .hidden {
+    display: none;
+  }
+  .navbar-collapse {
+    overflow: auto; /* or overflow: scroll; */
+    max-height: 300px; /* Adjust the max-height as needed */
+  }
+  .product-view {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .product-card {
+    flex-basis: calc(33.33% - 20px);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-images {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+    height: 0;
+    padding-top: 66.66%;
+  }
+  
+  .product-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: slideImage 6s infinite;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .product-images img.active {
+    display: block;
+  }
+  
+  .product-description {
+    padding: 20px;
+    background-color: #f1f1f1;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .product-description h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .product-description p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #337ab7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #23527c;
+  }
+  
+  @keyframes slideImage {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    33.33% {
+      opacity: 1;
+    }
+    53.33% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
