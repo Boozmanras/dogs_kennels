@@ -73,6 +73,17 @@ return false;
 // Function to handle file upload
 function uploadFile($inputName, $targetDirectory) {
 $targetFile = $targetDirectory . basename($_FILES[$inputName]["name"]);
+
+if (move_uploaded_file($_FILES[$inputName]["tmp_name"], $targetFile)) {
+return basename($_FILES[$inputName]["name"]);
+}
+
+return null;
+}
+
+/*
+function uploadFile($inputName, $targetDirectory) {
+$targetFile = $targetDirectory . basename($_FILES[$inputName]["name"]);
 $imageFileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
 $uploadOk = 1;
 
@@ -113,7 +124,7 @@ echo "<script>alert('Error: Failed to upload file.');</script>";
 
 return null;
 }
-
+*/
 
 //update data
 function updateDatabaseValues($conn, $table, $columns, $values, $conditions = '') {
