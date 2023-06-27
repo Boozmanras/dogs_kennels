@@ -27,7 +27,7 @@ $trust = $row['trust'];
 <h3><span>About us</span></h3>
 <!--<p>At Chebafam Dog Kennels, we are dedicated to revolutionizing the dog training and security industry. Our highly skilled team specializes in professional dog training, behavior modification,and top-notch security solutions. We strive to create a harmonious bond between dogs and their owners while ensuring the safety and well-being of our clients and their canine companions. With our exceptional services tailored to meet specific needs, we guarantee an unmatched experience that will transform the lives of both dogs and their owners.Trust Chebafam Dog Kennels for excellence in training, security, and lasting companionship.</p>
 -->
-<h4>Unleashing the Extraordinary in Canine Companionship.<h4>
+Unleashing the Extraordinary in Canine Companionship.
 
 <p>At ChebaFam Kennels, we are passionate about bringing out the best in dogs and their human companions. Our mission is to create a world where dogs and their families live in perfect harmony, experiencing the joys of a deep and meaningful bond based on trust, understanding, and mutual respect.</p>
 
