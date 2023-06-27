@@ -27,7 +27,7 @@ $trust = $row['trust'];
 <h3><span>About us</span></h3>
 <!--<p>At Chebafam Dog Kennels, we are dedicated to revolutionizing the dog training and security industry. Our highly skilled team specializes in professional dog training, behavior modification,and top-notch security solutions. We strive to create a harmonious bond between dogs and their owners while ensuring the safety and well-being of our clients and their canine companions. With our exceptional services tailored to meet specific needs, we guarantee an unmatched experience that will transform the lives of both dogs and their owners.Trust Chebafam Dog Kennels for excellence in training, security, and lasting companionship.</p>
 -->
-<h2><b>Unleashing the Extraordinary in Canine Companionship.</b><h2>
+<h4>Unleashing the Extraordinary in Canine Companionship.<h4>
 
 <p>At ChebaFam Kennels, we are passionate about bringing out the best in dogs and their human companions. Our mission is to create a world where dogs and their families live in perfect harmony, experiencing the joys of a deep and meaningful bond based on trust, understanding, and mutual respect.</p>
 
@@ -125,8 +125,8 @@ foreach ($data as $row) {
 <div class="row">
 <div class="col-md-6">
 <h3><span>Our vision</span></h3>
-<h2><b>Unleashing a Harmonious World:
-Where Dogs and Their Human Companions Thrive Together.</b></h2>
+<h4><b>Unleashing a Harmonious World:
+Where Dogs and Their Human Companions Thrive Together.</b></h4>
 
 <p>At the heart of our vision lies a world where dogs and their human companions coexist in perfect harmony, bound by understanding and mutual respect. We strive for a society where well-mannered and self-assured dogs not only bring joy and fulfillment to their families but are also esteemed and valued members of their communities.</b>
 
@@ -176,8 +176,8 @@ User
 <h3><span>Our mission</span></h3>
 <div id="tabs">
 
-<h2><b>Unleash a Stronger Bond with Your Furry Friend,
-While Ensuring Unparalleled Security.</b></h2>
+<h4><b>Unleash a Stronger Bond with Your Furry Friend,
+While Ensuring Unparalleled Security.</b></h4>
 <p>At our core, we are passionate about fostering responsible dog ownership, nurturing the extraordinary connection between humans and their four-legged companions, and providing trustworthy security solutions to individuals, families, and businesses alike.</p>
 
 <p>With an unwavering commitment to employing the most effective and compassionate training techniques, we empower dogs to reach their utmost potential, paving the way for owners to relish a harmonious and fulfilled life alongside their cherished pets.</p>
