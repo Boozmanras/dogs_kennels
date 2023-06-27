@@ -128,40 +128,41 @@ return null;
 
 //update data
 function updateDatabaseValues($conn, $table, $columns, $values, $conditions = '') {
-try {
-// Prepare the SQL statement
-$setStatements = array_map(function ($column) {
-return $column . ' = ?';
-}, $columns);
-$setClause = implode(', ', $setStatements);
-$stmt = $conn->prepare("UPDATE $table SET $setClause $conditions");
+    try {
+        // Prepare the SQL statement
+        $setStatements = array_map(function ($column) {
+            return $column . ' = ?';
+        }, $columns);
+        $setClause = implode(', ', $setStatements);
+        $stmt = $conn->prepare("UPDATE $table SET $setClause $conditions");
 
-// Check if the SQL statement preparation was successful
-if (!$stmt) {
-throw new Exception(".");
+        // Check if the SQL statement preparation was successful
+        if (!$stmt) {
+            throw new Exception("Failed to prepare the SQL statement.");
+        }
+
+        // Bind the parameters and execute the statement
+        $bindTypes = str_repeat('s', count($columns));
+        $stmt->bind_param($bindTypes, ...$values);
+        $stmt->execute();
+
+        // Check if any rows were affected
+        if ($stmt->affected_rows > 0) {
+            // Update was successful
+            echo "<script> alert('Values updated successfully.');</script>";
+        } else {
+            // No rows were affected, handle the case as needed
+            echo "No rows were affected.";
+        }
+
+        // Close the statement
+        $stmt->close();
+    } catch (Exception $e) {
+        // Handle the exception, log an error, or display an error message
+        // echo "Error: " . $e->getMessage();
+    }
 }
 
-// Bind the parameters and execute the statement
-$bindTypes = str_repeat('s', count($columns));
-$stmt->bind_param($bindTypes, ...$values);
-$stmt->execute();
-
-// Check if any rows were affected
-if ($stmt->affected_rows > 0) {
-// Update was successful
-echo "<script> alert('Values updated successfully.');</script>";
-} else {
-// No rows were affected, handle the case as needed
-echo ".";
-}
-
-// Close the statement
-$stmt->close();
-} catch (Exception $e) {
-// Handle the exception, log an error, or display an error message
-//echo "Error: " . $e->getMessage();
-}
-}
 
 function addWatermarkToImage($sourceImagePath, $watermarkImagePath, $outputImagePath) {
 // Get the file extensions
