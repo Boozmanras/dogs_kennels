@@ -46,7 +46,8 @@ if ($data !== false) {
     <meta name="twitter:description" content="<?php echo $meta_desc; ?>">
     <meta name="twitter:image" content="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'].'/admin/assets/img/'.$logo; ?>">
     <meta name="twitter:card" content="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'].'/admin/assets/img/'.$logo; ?>">
-    <title><?php echo $title; ?></title>
+	<link rel="icon" type="image/png" href="favicon.png">
+	<title><?php echo $title; ?></title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/mains.css" rel="stylesheet">
