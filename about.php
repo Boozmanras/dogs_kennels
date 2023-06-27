@@ -113,7 +113,7 @@ if ($data) {
 			<div class="row">
 				<div class="col-md-6">
 					<h3><span>Our vision</span></h3>
-                     <p><?php echo $vision; ?></p>		
+                     	
 					<h3><span>Our business hours</span></h3>
 					<div class="hours">
 						<div>
@@ -149,19 +149,18 @@ if ($data) {
 				<div class="col-md-6">
 					<h3><span>Our mission</span></h3>
 					<div id="tabs">
-						<ul>
+					
 						
-							<li><a href="#tabs-3">Trust us</a></li>
-						</ul>
-						
-                          
-							<p><?php echo $mission; ?></p>
+<p>At our core, we are passionate about fostering responsible dog ownership, nurturing the extraordinary connection between humans and their four-legged companions, and providing trustworthy security solutions to individuals, families, and businesses alike.</p>
+
+<p>With an unwavering commitment to employing the most effective and compassionate training techniques, we empower dogs to reach their utmost potential, paving the way for owners to relish a harmonious and fulfilled life alongside their cherished pets.</p>
+
+<p>But it doesn't stop there. Our dedication extends beyond training to deliver an exceptional customer experience, going above and beyond to maintain the highest standards of professionalism in every facet of our business.</p>
+
+<p>Join us on this transformative journey, where responsible dog ownership meets unbeatable customer service, creating an extraordinary life for both you and your beloved furry companion.</p>
 							
 						
-						<div id="tabs-3">
-							<p><?php echo $trust; ?></p>
-							
-						</div>
+						
 					</div>
 				</div>
 			</div>
