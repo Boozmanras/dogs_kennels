@@ -60,9 +60,9 @@ $s_phone = $_POST['tel'];
 $location = $_POST['location'];
 $google = $_POST['google'];
 
-/*$site_logo = uploadFile("site_logo", "assets/img/");
+$site_logo = uploadFile("site_logo", "assets/img/");
 $siteFavicon = uploadFile("site_favicon", "assets/img/");
-*/
+
 
 $table = 'settings';
 $columns = ['site_name', 'meta_description', 'meta_keywords', 'email', 'phone', 'location', 'analytics'];
@@ -133,7 +133,7 @@ textarea.value = value;
 <label for="site-keywords" class="form-label">Site keywords(separate with commas)</label>
 <textarea class="form-control" name="meta_keywords" placeholder="Keywords"><?php if(isset($keywords)){echo $keywords; } ?></textarea>
 </div>
-<?php /* ?>
+<?php  ?>
 <div class="mb-3">
 <label class="form-label">Site Logo</label>
 <input class="form-control" name="site_logo" type="file" id="formFile1">
@@ -145,7 +145,7 @@ textarea.value = value;
 <input class="form-control" name="site_favicon" type="file" id="formFile2">
 <small class="text-muted">The image must have a maximum size of 1MB</small></br>
 <img id="faviconPreview" class="preview-image" src="<?php if(isset($s_favicon)){echo 'assets/img/'.$s_favicon; } ?>" alt="Favicon Preview" style="max-width: 150px; border-radius:50%; margin-top: 10px;">
-</div> <?php */ ?>
+</div> <?php ?>
 
 <div class="mb-3">
 <label class="form-label">Email</label>
